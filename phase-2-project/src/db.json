@@ -1,0 +1,19 @@
+{
+  "classes": [
+    {
+      "id": 1,
+      "name": "BLS for HealthCare Provider",
+      "description": "BLS (Basic Life Support) is American Health Association’s CPR for Healthcare Professionals. Our course covers adult, child, and infant CPR, two-person rescue and choking."
+    },
+    {
+      "id": 2,
+      "name": "Certified CPR, AED, First Aid",
+      "description": "Heartsaver™ CPR/AED Certification, First-Aid. Learn to save a life! We train individuals and groups, and are ecstatic to teach our knowledge to others"
+    },
+    {
+      "id": 3,
+      "name": "Blended Training and Certification",
+      "description": "Blended learning is conducted in two sessions. The first session involves virtual learning on the American Heart Association website, followed by an in-person experience with our certified instructors."
+    }
+  ]
+}
