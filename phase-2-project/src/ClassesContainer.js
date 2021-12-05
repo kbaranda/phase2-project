@@ -3,11 +3,11 @@ import Class from "../src/Class"
 
 class ClassesContainer extends React.Component {
   render() {
-    const classes = this.props.classes
+    const courses = this.props.courses
     return (
       <div className="container">
         <h1>Classes</h1>
-        {classes.map((course) => (
+        {courses.map((course) => (
           <Class
           key={course.id}
           name={course.name}

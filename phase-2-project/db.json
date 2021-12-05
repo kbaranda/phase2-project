@@ -15,5 +15,25 @@
       "name": "Blended Training and Certification",
       "description": "Blended learning is conducted in two sessions. The first session involves virtual learning on the American Heart Association website, followed by an in-person experience with our certified instructors."
     }
+  ],
+  "staff": [
+    {
+      "id": 1,
+      "name": "Alma Chapa",
+      "info": "CEO and Founder of CPR Prime Services",
+      "likes": 15
+    },
+    {
+      "id": 2,
+      "name": "Jose Garza III",
+      "info": "Co-Founder and Lead instructor of CPR Prime Services",
+      "likes": 12
+    },
+    {
+      "id": 3,
+      "name": "Kat Aranda",
+      "info": "Lead Software Engineer and Media Tech of CPR Prime Services",
+      "likes": 50
+    }
   ]
 }

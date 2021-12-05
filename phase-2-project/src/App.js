@@ -8,14 +8,20 @@ import {
 import ClassesContainer from "./ClassesContainer";
 import Home from "./Home";
 import AboutUs from "./AboutUs";
-import courseData from "../src/db.json";
 
 class App extends React.Component {
-  state = {
-    classes: courseData
+  constructor(props) {
+    super(props) 
+    this.state = {
+      classes: []
+    }
+  }
+  componentDidMount() {
+    fetch("http://localhost:3000/classes")
+    .then(resp => resp.json())
+    .then(course => this.setState({course}))
   }
   render () {
-    console.log(this.state.classes.classes)
     return (
       <Router>
         <div>
@@ -25,7 +31,7 @@ class App extends React.Component {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/classes">Classes</Link>
+                <Link to="/courses">Classes</Link>
               </li>
               <li>
                 <Link to="/about_us">About Us</Link>
@@ -34,8 +40,8 @@ class App extends React.Component {
           </nav>
   
           <Switch>
-            <Route path="/classes">
-              <ClassesContainer classes={this.state.classes.classes}/>
+            <Route path="/courses">
+              <ClassesContainer courses={this.state.course}/>
             </Route>
             <Route path="/about_us">
               <AboutUs />
