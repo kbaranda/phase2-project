@@ -1,4 +1,5 @@
 import React from "react";
+import Class from "../src/Class"
 
 class ClassesContainer extends React.Component {
   render() {
@@ -6,6 +7,7 @@ class ClassesContainer extends React.Component {
     return (
       <div className="container">
         <h2>Classes</h2>
+        <Class />
       </div>
     )
   }
