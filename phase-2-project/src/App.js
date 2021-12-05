@@ -8,9 +8,14 @@ import {
 import ClassesContainer from "./ClassesContainer";
 import Home from "./Home";
 import AboutUs from "./AboutUs";
+import courseData from "../src/db.json";
 
 class App extends React.Component {
+  state = {
+    classes: courseData
+  }
   render () {
+    console.log(this.state.classes.classes)
     return (
       <Router>
         <div>
@@ -30,7 +35,7 @@ class App extends React.Component {
   
           <Switch>
             <Route path="/classes">
-              <ClassesContainer />
+              <ClassesContainer classes={this.state.classes.classes}/>
             </Route>
             <Route path="/about_us">
               <AboutUs />
