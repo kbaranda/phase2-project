@@ -6,10 +6,12 @@ class ClassesContainer extends React.Component {
     const classes = this.props.classes
     return (
       <div className="container">
-        <h2>Classes</h2>
+        <h1>Classes</h1>
         {classes.map((course) => (
           <Class
           key={course.id}
+          name={course.name}
+          description={course.description}
           />
         ))}
       </div>
