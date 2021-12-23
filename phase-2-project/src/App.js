@@ -11,15 +11,15 @@ import AboutUs from "./AboutUs";
 
 class App extends React.Component {
   constructor(props) {
-    super(props) 
+    super(props);
     this.state = {
-      classes: []
+      courses: []
     }
   }
   componentDidMount() {
     fetch("http://localhost:3000/classes")
     .then(resp => resp.json())
-    .then(course => this.setState({course}))
+    .then((course) => this.setState({course}))
   }
   render () {
     return (

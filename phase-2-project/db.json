@@ -21,19 +21,33 @@
       "id": 1,
       "name": "Alma Chapa",
       "info": "CEO and Founder of CPR Prime Services",
-      "likes": 15
+      "likes": 9
     },
     {
       "id": 2,
       "name": "Jose Garza III",
       "info": "Co-Founder and Lead instructor of CPR Prime Services",
-      "likes": 12
+      "likes": 6
     },
     {
       "id": 3,
       "name": "Kat Aranda",
       "info": "Lead Software Engineer and Media Tech of CPR Prime Services",
-      "likes": 50
+      "likes": 41
+    },
+    {
+      "name": "Raul Aranda",
+      "image": "img",
+      "info": "handson",
+      "likes": 2,
+      "id": 4
+    },
+    {
+      "name": "Emma",
+      "image": "image",
+      "info": "basic info",
+      "likes": 3,
+      "id": 5
     }
   ]
 }
